@@ -2,7 +2,7 @@
 <h2> Hey there! I'm Messaouda . <img src="https://github.com/souvikguria98/souvikguria98/blob/master/Hi.gif" width="25"></h2>
   
   🔭 &nbsp; I created this repository for a year-end project, Have a nice day.
-  ✍️ &nbsp; Project Title : Wireless Sensor Network clustreing.
+  ✍️ &nbsp; Project Title : Wireless Sensor Network clustering.
   💼 &nbsp; Resources :
   
   https://www.springer.com/series/4748 
