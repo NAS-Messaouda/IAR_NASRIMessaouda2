@@ -1,0 +1,195 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+%\usepackage[english]{babel}															
+\usepackage[english]{babel}
+\usepackage{indentfirst}		% for indent
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url, array}
+\usepackage[num,abnt-repeated-author-omit=yes]{abntex2cite}
+
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+%\date{\today}
+
+%%% Begin document
+\begin{document}
+		
+{\flushleft\horrule{2pt}
+\begin{center}
+{\includegraphics[height=0.09\textwidth]{logo_english.png}} 
+\begin{tabular}{ m{1.8cm} m{10cm} m{1.8cm}}
+\begin{center}
+\end{center}
+&
+\begin{center} 
+{\small
+{Adrar University} \\
+{Faculty of Science and Technology} \\
+{Department of Mathematics and Computer Science}} \\
+
+\end{center}
+&
+
+\begin{center}
+\end{center}
+\end{tabular}
+\end{center}
+\flushleft \horrule{2pt}\\[1cm]
+}
+
+
+\begin{center}
+
+{
+\huge  
+Initiation to Research (Course) \\
+\vspace{0.2cm}
+2\textsuperscript{nd} Year Master (S3) \\
+\vspace{0.2cm}
+2020/2021}\\
+
+\vspace{1cm}
+
+{
+\Huge   
+\textbf{Clustering in wireless sensor networks }}\\
+\vspace{1cm}
+
+%Domain: Mathematics and Computer Science \\
+%Major: Informatics - Intelligent Systems \\
+{
+\Large
+\textbf{Member 1 Messaouda NASRI  \footnote{Email: nas.messaouda@gmail.com} \\ }}\\
+\vspace{3cm}
+
+{
+\large
+\textbf{Instructor: Dr. Abdelghani DAHOU \footnote{Email: dahou.abdghani@univ-adrar.edu.dz}}}\\
+\today
+\end{center}
+\pagebreak
+\tableofcontents
+\pagebreak
+\listoffigures
+\pagebreak
+\listoftables
+\pagebreak
+
+\section{Mini-project Report Policies}
+
+As a part of the assigned mini-project for this course, we require you to complete this research proposal (report) of your choosing subject based on the learning materials/techniques acquired during this course.  
+\begin{itemize}
+    \item The project can be related to your final master project (if you have selected one).
+    \item If the project contains more than one student, \textbf{you need to emphasize each person's role in the project.} 
+    \item Each group need to submit thier final report through Github (upload .tex and .pdf files).
+    \item The report should include about \textbf{five (5) pages }(excluding figures, tables, and references).
+    \item Check the course updates and deadlines on the course main page \footnote{https://dr-dahou-adrar.github.io/teaching\_content/academic\_year\_2020\_2021/2020-2021-S1-IAR1}.
+\end{itemize}
+
+
+
+\section{Abstract}
+
+Wireless sensor nodes are made up of small electronic devices that are capable of sensing, computing,  and transmitting data from harsh physical environments like a surveillance field, sensor nodes are connected together through radio frequency (RF). The problem or motivation (These sensor nodes majorly depend on batteries for energy, which get depleted at a faster rate because of the computation and communication operations they have to perform), 
+the aim (energy-saving must be ensured to keep the network working as maximum as possible). In this thesis, How to address the research questions or hypotheses (we proposed a new routing protocol based on the LEACH protocol. This is an energy-efficient clustering algorithm. The proposed protocol enlarges wireless sensor networks (WSN) lifetime by considering remaining energy and distance from nodes to Base station in the election of cluster head. Comparing the result simulation between LEACH and the proposed protocol showed that the proposed protocol will prolong the network lifetime). \linebreak 
+Keyword: 
+LEACH, Energy-efficient, wireless sensor networks, clustering.
+
+\section{Introduction}
+\subsection{Statement of the Focus and Purpose of the Study}
+Advances in wireless communication made it possible to develop wireless sensor networks (WSN), consisting of small sensing devices are called nodes, which collect information by cooperating with each other.wireless sensor networks is classified as an ad-hoc network, to collect information on well-defined events, and to route them to a particular processing node, called base station (BS). The use of WSN is increasing day by day and at the same time, it faces the problem of energy constraints in terms of limited battery life. \linebreak 
+Energy efficiency is considered to be the main design objective, in view of the fact that a wireless node can only be outfitted with a restricted power supply.  In several applications, replacement of energy sources is not possible, and thus the node’s life span demonstrates a strong reliance on battery life .\linebreak 
+\subsection{Research Questions/Hypotheses}
+Clustering is among the design schemes utilized to handle the energy utilization proficiently, via minimizing the amount of nodes to be included in long-haul transmission with base station (sink) and allocating the energy expenditure uniformly amid the nodes. 
+Lots of algorithms have been reported with the goal of exploiting the network life span by implementing clustering designs. Probably the most renowned  hierarchical protocol is Low Energy Adaptive Hierarchy (LEACH).\linebreak 
+\subsection{Theory and Method/Methodology}
+In this paper, we propose a new routing protocol basing on LEACH protocol for wireless sensor networks to extend the lifetime of wireless sensor networks in terms of the base Station placed in the sensor area.\linebreak 
+Our purpose is to introduce a new routing protocol to wireless sensor networks field that limits high energy consumption and enhance topology of the network through a  reliable clustering mechanism .
+
+
+\section{Related Works}
+A summary of research papers related to your research topic (\textbf{min. 5 reviewed papers}), used to address questions about originality and use previous research as a foundation for further research.
+\begin{itemize}
+    \item Existing theory/methods related to your study. 
+    \item Related works should support your research questions/hypotheses formulation.
+    \item Related works need to demonstrate why your research is essential.
+\end{itemize}
+
+\section{Methodology/Research Methods}
+A brief description of the system design/framework established to solve the research problem including:
+\begin{itemize}
+    \item Used techniques/algorithms/simulations/data collection.
+    \item A diagram (figure) illustrating the experimental design. 
+    \item Used methods for the data and results analysis.
+\end{itemize}
+
+\section{Project Timeline}
+ The GANTT chart below is a tentative schedule of our plans. We will be using this schedule to make sure we stay on focus, however; plans are not set completely and therefore might be changed before begins.
+ \begin{center}
+ \begin{tabular}{||c c ||} 
+ \hline
+ Activity  & Estimated duration  \\ [1ex] 
+ \hline\hline
+ Literature search & 15 days       \\ [1ex]
+ \hline
+ Literature review & 15 days      \\[1ex]
+ \hline
+investigate and evaluate the protocol routing & 5 days  \\[1ex]
+ \hline
+ Protocol comparison & 2 days  \\[1ex]
+ \hline
+ developer and test the protocol & 5 days  \\ [1ex] 
+ \hline
+ \hline
+ Get stock market data & 2 days  \\ [1ex] 
+ \hline
+ \hline
+ Compared to market models & 2 days  \\ [1ex] 
+ \hline
+ \hline
+ Analyse & 8 days  \\ [1ex] 
+ \hline
+ \hline
+ Complete report & 15 days  \\ [1ex]
+ \hline
+ 
+\end{tabular}
+\end{center}
+
+\pagebreak
+\bibliographystyle{abnt-num}
+\bibliography{ref}
+
+\end{document}
